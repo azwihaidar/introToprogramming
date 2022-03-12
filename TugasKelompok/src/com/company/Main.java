@@ -87,7 +87,12 @@ public class Main {
         //menampilkan pemberlian perorang
         System.out.println("Pembelian per orang <untuk "+ jmlOrang + " orang>               = Rp.       "+ String.format("%.2f",((totalPembelian-discount)/jmlOrang)));
         System.out.println("                 Terima kasih atas kunjungan Anda...                       ");
-        System.out.println("                  ...tekan ENTER untuk keluar...                           ");
+        System.out.print("                  ...tekan ENTER untuk keluar...                           ");
+        try{
+            System.in.read();
+        }
+        catch(Exception e){
 
+        }
     }
 }
